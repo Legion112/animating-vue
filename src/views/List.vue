@@ -22,11 +22,11 @@ export default {
   },
   methods: {
     addContact() {
-      this.contacts.push(this.newContact);
+      this.contacts.push(this.newContact)
       this.newContact = ''
     },
     sortContacts() {
-      this.contacts.sort();
+      this.contacts.sort()
     }
   }
 }

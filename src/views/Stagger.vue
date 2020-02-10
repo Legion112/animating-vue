@@ -5,8 +5,7 @@
 </template>
 
 <script>
-import gsap from 'gsap';
-
+import gsap from 'gsap'
 export default {
   data() {
     return {
@@ -32,7 +31,6 @@ export default {
         from: 'center'
       }
     })
-    // stagger cards into position
   }
 }
 </script>

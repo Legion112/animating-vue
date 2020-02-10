@@ -6,24 +6,20 @@
 
 <script>
 import gsap from 'gsap'
-
 export default {
   methods: {
     beforeEnter(el) {
       el.style.opacity = 0
       el.style.transform = 'scale(0,0)'
-
-      // starting style
     },
     enter(el, done) {
       gsap.to(el, {
         duration: 1,
         opacity: 1,
         scale: 1,
-        ease: 'bounce.out',
+        ease: 'bounce.inOut',
         onComplete: done
       })
-      // style to transition to once entered
     }
   }
 }

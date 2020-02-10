@@ -7,8 +7,7 @@
 </template>
 
 <script>
-import  gsap from 'gsap';
-
+import gsap from 'gsap'
 export default {
   data() {
     return {
@@ -18,7 +17,6 @@ export default {
   },
   watch: {
     number(newValue) {
-      // animate our data
       gsap.to(this.$data, {
         duration: 1,
         ease: 'circ.out',

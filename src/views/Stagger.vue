@@ -5,7 +5,8 @@
 </template>
 
 <script>
-import gsap from 'gsap'
+import gsap from 'gsap';
+
 export default {
   data() {
     return {
@@ -20,6 +21,17 @@ export default {
     }
   },
   mounted() {
+    gsap.from('.card', {
+      duration: 0.5,
+      opacity: 0,
+      scale: 0,
+      y: 200,
+      ease: 'power1',
+      stagger: {
+        each: 0.1,
+        from: 'center'
+      }
+    })
     // stagger cards into position
   }
 }
